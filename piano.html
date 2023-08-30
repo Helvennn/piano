@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Piano</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!-- Custom Keys -->
+        <select name="format" id="custom1" class="custom one">
+            <option selected disabled>a</option>
+            <option value="C1">C1</option>
+            <option value="CS1">CS1</option>
+            <option value="D1">D1</option>
+            <option value="DS1">DS1</option>
+            <option value="E1">E1</option>
+            <option value="F1">F1</option>
+            <option value="FS1">FS1</option>
+            <option value="G1">G1</option>
+            <option value="GS1">GS1</option>
+            <option value="A1">A1</option>
+            <option value="AS1">AS1</option>
+            <option value="B1">B1</option>
+            
+            <option value="C2">C2</option>
+            <option value="CS2">CS2</option>
+            <option value="D2">D2</option>
+            <option value="DS2">DS2</option>
+            <option value="E2">E2</option>
+            <option value="F2">F2</option>
+            <option value="FS2">FS2</option>
+            <option value="G2">G2</option>
+            <option value="GS2">GS2</option>
+            <option value="A2">A2</option>
+            <option value="AS2">AS2</option>
+            <option value="B2">B2</option>
+
+            <option value="C3">C3</option>
+            <option value="CS3">CS3</option>
+            <option value="D3">D3</option>
+            <option value="DS3">DS3</option>
+            <option value="E3">E3</option>
+            <option value="F3">F3</option>
+            <option value="FS3">FS3</option>
+            <option value="G3">G3</option>
+            <option value="GS3">GS3</option>
+            <option value="A3">A3</option>
+            <option value="AS3">AS3</option>
+            <option value="B3">B3</option>
+
+            <option value="C4">C4</option>
+            <option value="CS4">CS4</option>
+            <option value="D4">D4</option>
+            <option value="DS4">DS4</option>
+            <option value="E4">E4</option>
+            <option value="F4">F4</option>
+            <option value="FS4">FS4</option>
+            <option value="G4">G4</option>
+            <option value="GS4">GS4</option>
+            <option value="A4">A4</option>
+            <option value="AS4">AS4</option>
+            <option value="B4">B4</option>
+
+            <option value="C5">C5</option>
+            <option value="CS5">CS5</option>
+            <option value="D5">D5</option>
+            <option value="DS5">DS5</option>
+            <option value="E5">E5</option>
+            <option value="F5">F5</option>
+            <option value="FS5">FS5</option>
+            <option value="G5">G5</option>
+            <option value="GS5">GS5</option>
+            <option value="A5">A5</option>
+            <option value="AS5">AS5</option>
+            <option value="B5">B5</option>
+
+            <option value="C6">C6</option>
+            <option value="CS6">CS6</option>
+            <option value="D6">D6</option>
+            <option value="DS6">DS6</option>
+            <option value="E6">E6</option>
+            <option value="F6">F6</option>
+            <option value="FS6">FS6</option>
+            <option value="G6">G6</option>
+            <option value="GS6">GS6</option>
+            <option value="A6">A6</option>
+            <option value="AS6">AS6</option>
+            <option value="B6">B6</option>
+
+            <option value="C7">C7</option>
+            <option value="CS7">CS7</option>
+            <option value="D7">D7</option>
+            <option value="DS7">DS7</option>
+            <option value="E7">E7</option>
+            <option value="F7">F7</option>
+            <option value="FS7">FS7</option>
+            <option value="G7">G7</option>
+            <option value="GS7">GS7</option>
+            <option value="A7">A7</option>
+            <option value="AS7">AS7</option>
+            <option value="B7">B7</option>
+        </select>
+        <select name="format" id="custom2" class="custom two">
+            <option selected disabled>s</option>
+            <option value="C1">C1</option>
+            <option value="CS1">CS1</option>
+            <option value="D1">D1</option>
+            <option value="DS1">DS1</option>
+            <option value="E1">E1</option>
+            <option value="F1">F1</option>
+            <option value="FS1">FS1</option>
+            <option value="G1">G1</option>
+            <option value="GS1">GS1</option>
+            <option value="A1">A1</option>
+            <option value="AS1">AS1</option>
+            <option value="B1">B1</option>
+            
+            <option value="C2">C2</option>
+            <option value="CS2">CS2</option>
+            <option value="D2">D2</option>
+            <option value="DS2">DS2</option>
+            <option value="E2">E2</option>
+            <option value="F2">F2</option>
+            <option value="FS2">FS2</option>
+            <option value="G2">G2</option>
+            <option value="GS2">GS2</option>
+            <option value="A2">A2</option>
+            <option value="AS2">AS2</option>
+            <option value="B2">B2</option>
+
+            <option value="C3">C3</option>
+            <option value="CS3">CS3</option>
+            <option value="D3">D3</option>
+            <option value="DS3">DS3</option>
+            <option value="E3">E3</option>
+            <option value="F3">F3</option>
+            <option value="FS3">FS3</option>
+            <option value="G3">G3</option>
+            <option value="GS3">GS3</option>
+            <option value="A3">A3</option>
+            <option value="AS3">AS3</option>
+            <option value="B3">B3</option>
+
+            <option value="C4">C4</option>
+            <option value="CS4">CS4</option>
+            <option value="D4">D4</option>
+            <option value="DS4">DS4</option>
+            <option value="E4">E4</option>
+            <option value="F4">F4</option>
+            <option value="FS4">FS4</option>
+            <option value="G4">G4</option>
+            <option value="GS4">GS4</option>
+            <option value="A4">A4</option>
+            <option value="AS4">AS4</option>
+            <option value="B4">B4</option>
+
+            <option value="C5">C5</option>
+            <option value="CS5">CS5</option>
+            <option value="D5">D5</option>
+            <option value="DS5">DS5</option>
+            <option value="E5">E5</option>
+            <option value="F5">F5</option>
+            <option value="FS5">FS5</option>
+            <option value="G5">G5</option>
+            <option value="GS5">GS5</option>
+            <option value="A5">A5</option>
+            <option value="AS5">AS5</option>
+            <option value="B5">B5</option>
+
+            <option value="C6">C6</option>
+            <option value="CS6">CS6</option>
+            <option value="D6">D6</option>
+            <option value="DS6">DS6</option>
+            <option value="E6">E6</option>
+            <option value="F6">F6</option>
+            <option value="FS6">FS6</option>
+            <option value="G6">G6</option>
+            <option value="GS6">GS6</option>
+            <option value="A6">A6</option>
+            <option value="AS6">AS6</option>
+            <option value="B6">B6</option>
+
+            <option value="C7">C7</option>
+            <option value="CS7">CS7</option>
+            <option value="D7">D7</option>
+            <option value="DS7">DS7</option>
+            <option value="E7">E7</option>
+            <option value="F7">F7</option>
+            <option value="FS7">FS7</option>
+            <option value="G7">G7</option>
+            <option value="GS7">GS7</option>
+            <option value="A7">A7</option>
+            <option value="AS7">AS7</option>
+            <option value="B7">B7</option>
+        </select>
+        <select name="format" id="custom3" class="custom three">
+            <option selected disabled>d</option>
+            <option value="C1">C1</option>
+            <option value="CS1">CS1</option>
+            <option value="D1">D1</option>
+            <option value="DS1">DS1</option>
+            <option value="E1">E1</option>
+            <option value="F1">F1</option>
+            <option value="FS1">FS1</option>
+            <option value="G1">G1</option>
+            <option value="GS1">GS1</option>
+            <option value="A1">A1</option>
+            <option value="AS1">AS1</option>
+            <option value="B1">B1</option>
+            
+            <option value="C2">C2</option>
+            <option value="CS2">CS2</option>
+            <option value="D2">D2</option>
+            <option value="DS2">DS2</option>
+            <option value="E2">E2</option>
+            <option value="F2">F2</option>
+            <option value="FS2">FS2</option>
+            <option value="G2">G2</option>
+            <option value="GS2">GS2</option>
+            <option value="A2">A2</option>
+            <option value="AS2">AS2</option>
+            <option value="B2">B2</option>
+
+            <option value="C3">C3</option>
+            <option value="CS3">CS3</option>
+            <option value="D3">D3</option>
+            <option value="DS3">DS3</option>
+            <option value="E3">E3</option>
+            <option value="F3">F3</option>
+            <option value="FS3">FS3</option>
+            <option value="G3">G3</option>
+            <option value="GS3">GS3</option>
+            <option value="A3">A3</option>
+            <option value="AS3">AS3</option>
+            <option value="B3">B3</option>
+
+            <option value="C4">C4</option>
+            <option value="CS4">CS4</option>
+            <option value="D4">D4</option>
+            <option value="DS4">DS4</option>
+            <option value="E4">E4</option>
+            <option value="F4">F4</option>
+            <option value="FS4">FS4</option>
+            <option value="G4">G4</option>
+            <option value="GS4">GS4</option>
+            <option value="A4">A4</option>
+            <option value="AS4">AS4</option>
+            <option value="B4">B4</option>
+
+            <option value="C5">C5</option>
+            <option value="CS5">CS5</option>
+            <option value="D5">D5</option>
+            <option value="DS5">DS5</option>
+            <option value="E5">E5</option>
+            <option value="F5">F5</option>
+            <option value="FS5">FS5</option>
+            <option value="G5">G5</option>
+            <option value="GS5">GS5</option>
+            <option value="A5">A5</option>
+            <option value="AS5">AS5</option>
+            <option value="B5">B5</option>
+
+            <option value="C6">C6</option>
+            <option value="CS6">CS6</option>
+            <option value="D6">D6</option>
+            <option value="DS6">DS6</option>
+            <option value="E6">E6</option>
+            <option value="F6">F6</option>
+            <option value="FS6">FS6</option>
+            <option value="G6">G6</option>
+            <option value="GS6">GS6</option>
+            <option value="A6">A6</option>
+            <option value="AS6">AS6</option>
+            <option value="B6">B6</option>
+
+            <option value="C7">C7</option>
+            <option value="CS7">CS7</option>
+            <option value="D7">D7</option>
+            <option value="DS7">DS7</option>
+            <option value="E7">E7</option>
+            <option value="F7">F7</option>
+            <option value="FS7">FS7</option>
+            <option value="G7">G7</option>
+            <option value="GS7">GS7</option>
+            <option value="A7">A7</option>
+            <option value="AS7">AS7</option>
+            <option value="B7">B7</option>
+        </select>
+        <select name="format" id="custom4" class="custom four">
+            <option selected disabled>f</option>
+            <option value="C1">C1</option>
+            <option value="CS1">CS1</option>
+            <option value="D1">D1</option>
+            <option value="DS1">DS1</option>
+            <option value="E1">E1</option>
+            <option value="F1">F1</option>
+            <option value="FS1">FS1</option>
+            <option value="G1">G1</option>
+            <option value="GS1">GS1</option>
+            <option value="A1">A1</option>
+            <option value="AS1">AS1</option>
+            <option value="B1">B1</option>
+            
+            <option value="C2">C2</option>
+            <option value="CS2">CS2</option>
+            <option value="D2">D2</option>
+            <option value="DS2">DS2</option>
+            <option value="E2">E2</option>
+            <option value="F2">F2</option>
+            <option value="FS2">FS2</option>
+            <option value="G2">G2</option>
+            <option value="GS2">GS2</option>
+            <option value="A2">A2</option>
+            <option value="AS2">AS2</option>
+            <option value="B2">B2</option>
+
+            <option value="C3">C3</option>
+            <option value="CS3">CS3</option>
+            <option value="D3">D3</option>
+            <option value="DS3">DS3</option>
+            <option value="E3">E3</option>
+            <option value="F3">F3</option>
+            <option value="FS3">FS3</option>
+            <option value="G3">G3</option>
+            <option value="GS3">GS3</option>
+            <option value="A3">A3</option>
+            <option value="AS3">AS3</option>
+            <option value="B3">B3</option>
+
+            <option value="C4">C4</option>
+            <option value="CS4">CS4</option>
+            <option value="D4">D4</option>
+            <option value="DS4">DS4</option>
+            <option value="E4">E4</option>
+            <option value="F4">F4</option>
+            <option value="FS4">FS4</option>
+            <option value="G4">G4</option>
+            <option value="GS4">GS4</option>
+            <option value="A4">A4</option>
+            <option value="AS4">AS4</option>
+            <option value="B4">B4</option>
+
+            <option value="C5">C5</option>
+            <option value="CS5">CS5</option>
+            <option value="D5">D5</option>
+            <option value="DS5">DS5</option>
+            <option value="E5">E5</option>
+            <option value="F5">F5</option>
+            <option value="FS5">FS5</option>
+            <option value="G5">G5</option>
+            <option value="GS5">GS5</option>
+            <option value="A5">A5</option>
+            <option value="AS5">AS5</option>
+            <option value="B5">B5</option>
+
+            <option value="C6">C6</option>
+            <option value="CS6">CS6</option>
+            <option value="D6">D6</option>
+            <option value="DS6">DS6</option>
+            <option value="E6">E6</option>
+            <option value="F6">F6</option>
+            <option value="FS6">FS6</option>
+            <option value="G6">G6</option>
+            <option value="GS6">GS6</option>
+            <option value="A6">A6</option>
+            <option value="AS6">AS6</option>
+            <option value="B6">B6</option>
+
+            <option value="C7">C7</option>
+            <option value="CS7">CS7</option>
+            <option value="D7">D7</option>
+            <option value="DS7">DS7</option>
+            <option value="E7">E7</option>
+            <option value="F7">F7</option>
+            <option value="FS7">FS7</option>
+            <option value="G7">G7</option>
+            <option value="GS7">GS7</option>
+            <option value="A7">A7</option>
+            <option value="AS7">AS7</option>
+            <option value="B7">B7</option>
+        </select>
+        <select name="format" id="custom5" class="custom five">
+            <option selected disabled>g</option>
+            <option value="C1">C1</option>
+            <option value="CS1">CS1</option>
+            <option value="D1">D1</option>
+            <option value="DS1">DS1</option>
+            <option value="E1">E1</option>
+            <option value="F1">F1</option>
+            <option value="FS1">FS1</option>
+            <option value="G1">G1</option>
+            <option value="GS1">GS1</option>
+            <option value="A1">A1</option>
+            <option value="AS1">AS1</option>
+            <option value="B1">B1</option>
+            
+            <option value="C2">C2</option>
+            <option value="CS2">CS2</option>
+            <option value="D2">D2</option>
+            <option value="DS2">DS2</option>
+            <option value="E2">E2</option>
+            <option value="F2">F2</option>
+            <option value="FS2">FS2</option>
+            <option value="G2">G2</option>
+            <option value="GS2">GS2</option>
+            <option value="A2">A2</option>
+            <option value="AS2">AS2</option>
+            <option value="B2">B2</option>
+
+            <option value="C3">C3</option>
+            <option value="CS3">CS3</option>
+            <option value="D3">D3</option>
+            <option value="DS3">DS3</option>
+            <option value="E3">E3</option>
+            <option value="F3">F3</option>
+            <option value="FS3">FS3</option>
+            <option value="G3">G3</option>
+            <option value="GS3">GS3</option>
+            <option value="A3">A3</option>
+            <option value="AS3">AS3</option>
+            <option value="B3">B3</option>
+
+            <option value="C4">C4</option>
+            <option value="CS4">CS4</option>
+            <option value="D4">D4</option>
+            <option value="DS4">DS4</option>
+            <option value="E4">E4</option>
+            <option value="F4">F4</option>
+            <option value="FS4">FS4</option>
+            <option value="G4">G4</option>
+            <option value="GS4">GS4</option>
+            <option value="A4">A4</option>
+            <option value="AS4">AS4</option>
+            <option value="B4">B4</option>
+
+            <option value="C5">C5</option>
+            <option value="CS5">CS5</option>
+            <option value="D5">D5</option>
+            <option value="DS5">DS5</option>
+            <option value="E5">E5</option>
+            <option value="F5">F5</option>
+            <option value="FS5">FS5</option>
+            <option value="G5">G5</option>
+            <option value="GS5">GS5</option>
+            <option value="A5">A5</option>
+            <option value="AS5">AS5</option>
+            <option value="B5">B5</option>
+
+            <option value="C6">C6</option>
+            <option value="CS6">CS6</option>
+            <option value="D6">D6</option>
+            <option value="DS6">DS6</option>
+            <option value="E6">E6</option>
+            <option value="F6">F6</option>
+            <option value="FS6">FS6</option>
+            <option value="G6">G6</option>
+            <option value="GS6">GS6</option>
+            <option value="A6">A6</option>
+            <option value="AS6">AS6</option>
+            <option value="B6">B6</option>
+
+            <option value="C7">C7</option>
+            <option value="CS7">CS7</option>
+            <option value="D7">D7</option>
+            <option value="DS7">DS7</option>
+            <option value="E7">E7</option>
+            <option value="F7">F7</option>
+            <option value="FS7">FS7</option>
+            <option value="G7">G7</option>
+            <option value="GS7">GS7</option>
+            <option value="A7">A7</option>
+            <option value="AS7">AS7</option>
+            <option value="B7">B7</option>
+        </select>
+        <select name="format" id="custom6" class="custom six">
+            <option selected disabled>h</option>
+            <option value="C1">C1</option>
+            <option value="CS1">CS1</option>
+            <option value="D1">D1</option>
+            <option value="DS1">DS1</option>
+            <option value="E1">E1</option>
+            <option value="F1">F1</option>
+            <option value="FS1">FS1</option>
+            <option value="G1">G1</option>
+            <option value="GS1">GS1</option>
+            <option value="A1">A1</option>
+            <option value="AS1">AS1</option>
+            <option value="B1">B1</option>
+            
+            <option value="C2">C2</option>
+            <option value="CS2">CS2</option>
+            <option value="D2">D2</option>
+            <option value="DS2">DS2</option>
+            <option value="E2">E2</option>
+            <option value="F2">F2</option>
+            <option value="FS2">FS2</option>
+            <option value="G2">G2</option>
+            <option value="GS2">GS2</option>
+            <option value="A2">A2</option>
+            <option value="AS2">AS2</option>
+            <option value="B2">B2</option>
+
+            <option value="C3">C3</option>
+            <option value="CS3">CS3</option>
+            <option value="D3">D3</option>
+            <option value="DS3">DS3</option>
+            <option value="E3">E3</option>
+            <option value="F3">F3</option>
+            <option value="FS3">FS3</option>
+            <option value="G3">G3</option>
+            <option value="GS3">GS3</option>
+            <option value="A3">A3</option>
+            <option value="AS3">AS3</option>
+            <option value="B3">B3</option>
+
+            <option value="C4">C4</option>
+            <option value="CS4">CS4</option>
+            <option value="D4">D4</option>
+            <option value="DS4">DS4</option>
+            <option value="E4">E4</option>
+            <option value="F4">F4</option>
+            <option value="FS4">FS4</option>
+            <option value="G4">G4</option>
+            <option value="GS4">GS4</option>
+            <option value="A4">A4</option>
+            <option value="AS4">AS4</option>
+            <option value="B4">B4</option>
+
+            <option value="C5">C5</option>
+            <option value="CS5">CS5</option>
+            <option value="D5">D5</option>
+            <option value="DS5">DS5</option>
+            <option value="E5">E5</option>
+            <option value="F5">F5</option>
+            <option value="FS5">FS5</option>
+            <option value="G5">G5</option>
+            <option value="GS5">GS5</option>
+            <option value="A5">A5</option>
+            <option value="AS5">AS5</option>
+            <option value="B5">B5</option>
+
+            <option value="C6">C6</option>
+            <option value="CS6">CS6</option>
+            <option value="D6">D6</option>
+            <option value="DS6">DS6</option>
+            <option value="E6">E6</option>
+            <option value="F6">F6</option>
+            <option value="FS6">FS6</option>
+            <option value="G6">G6</option>
+            <option value="GS6">GS6</option>
+            <option value="A6">A6</option>
+            <option value="AS6">AS6</option>
+            <option value="B6">B6</option>
+
+            <option value="C7">C7</option>
+            <option value="CS7">CS7</option>
+            <option value="D7">D7</option>
+            <option value="DS7">DS7</option>
+            <option value="E7">E7</option>
+            <option value="F7">F7</option>
+            <option value="FS7">FS7</option>
+            <option value="G7">G7</option>
+            <option value="GS7">GS7</option>
+            <option value="A7">A7</option>
+            <option value="AS7">AS7</option>
+            <option value="B7">B7</option>
+        </select>
+        <select name="format" id="custom7" class="custom seven">
+            <option selected disabled>j</option>
+            <option value="C1">C1</option>
+            <option value="CS1">CS1</option>
+            <option value="D1">D1</option>
+            <option value="DS1">DS1</option>
+            <option value="E1">E1</option>
+            <option value="F1">F1</option>
+            <option value="FS1">FS1</option>
+            <option value="G1">G1</option>
+            <option value="GS1">GS1</option>
+            <option value="A1">A1</option>
+            <option value="AS1">AS1</option>
+            <option value="B1">B1</option>
+            
+            <option value="C2">C2</option>
+            <option value="CS2">CS2</option>
+            <option value="D2">D2</option>
+            <option value="DS2">DS2</option>
+            <option value="E2">E2</option>
+            <option value="F2">F2</option>
+            <option value="FS2">FS2</option>
+            <option value="G2">G2</option>
+            <option value="GS2">GS2</option>
+            <option value="A2">A2</option>
+            <option value="AS2">AS2</option>
+            <option value="B2">B2</option>
+
+            <option value="C3">C3</option>
+            <option value="CS3">CS3</option>
+            <option value="D3">D3</option>
+            <option value="DS3">DS3</option>
+            <option value="E3">E3</option>
+            <option value="F3">F3</option>
+            <option value="FS3">FS3</option>
+            <option value="G3">G3</option>
+            <option value="GS3">GS3</option>
+            <option value="A3">A3</option>
+            <option value="AS3">AS3</option>
+            <option value="B3">B3</option>
+
+            <option value="C4">C4</option>
+            <option value="CS4">CS4</option>
+            <option value="D4">D4</option>
+            <option value="DS4">DS4</option>
+            <option value="E4">E4</option>
+            <option value="F4">F4</option>
+            <option value="FS4">FS4</option>
+            <option value="G4">G4</option>
+            <option value="GS4">GS4</option>
+            <option value="A4">A4</option>
+            <option value="AS4">AS4</option>
+            <option value="B4">B4</option>
+
+            <option value="C5">C5</option>
+            <option value="CS5">CS5</option>
+            <option value="D5">D5</option>
+            <option value="DS5">DS5</option>
+            <option value="E5">E5</option>
+            <option value="F5">F5</option>
+            <option value="FS5">FS5</option>
+            <option value="G5">G5</option>
+            <option value="GS5">GS5</option>
+            <option value="A5">A5</option>
+            <option value="AS5">AS5</option>
+            <option value="B5">B5</option>
+
+            <option value="C6">C6</option>
+            <option value="CS6">CS6</option>
+            <option value="D6">D6</option>
+            <option value="DS6">DS6</option>
+            <option value="E6">E6</option>
+            <option value="F6">F6</option>
+            <option value="FS6">FS6</option>
+            <option value="G6">G6</option>
+            <option value="GS6">GS6</option>
+            <option value="A6">A6</option>
+            <option value="AS6">AS6</option>
+            <option value="B6">B6</option>
+
+            <option value="C7">C7</option>
+            <option value="CS7">CS7</option>
+            <option value="D7">D7</option>
+            <option value="DS7">DS7</option>
+            <option value="E7">E7</option>
+            <option value="F7">F7</option>
+            <option value="FS7">FS7</option>
+            <option value="G7">G7</option>
+            <option value="GS7">GS7</option>
+            <option value="A7">A7</option>
+            <option value="AS7">AS7</option>
+            <option value="B7">B7</option>
+        </select>
+        <select name="format" id="custom8" class="custom eight">
+            <option selected disabled>k</option>
+            <option value="C1">C1</option>
+            <option value="CS1">CS1</option>
+            <option value="D1">D1</option>
+            <option value="DS1">DS1</option>
+            <option value="E1">E1</option>
+            <option value="F1">F1</option>
+            <option value="FS1">FS1</option>
+            <option value="G1">G1</option>
+            <option value="GS1">GS1</option>
+            <option value="A1">A1</option>
+            <option value="AS1">AS1</option>
+            <option value="B1">B1</option>
+            
+            <option value="C2">C2</option>
+            <option value="CS2">CS2</option>
+            <option value="D2">D2</option>
+            <option value="DS2">DS2</option>
+            <option value="E2">E2</option>
+            <option value="F2">F2</option>
+            <option value="FS2">FS2</option>
+            <option value="G2">G2</option>
+            <option value="GS2">GS2</option>
+            <option value="A2">A2</option>
+            <option value="AS2">AS2</option>
+            <option value="B2">B2</option>
+
+            <option value="C3">C3</option>
+            <option value="CS3">CS3</option>
+            <option value="D3">D3</option>
+            <option value="DS3">DS3</option>
+            <option value="E3">E3</option>
+            <option value="F3">F3</option>
+            <option value="FS3">FS3</option>
+            <option value="G3">G3</option>
+            <option value="GS3">GS3</option>
+            <option value="A3">A3</option>
+            <option value="AS3">AS3</option>
+            <option value="B3">B3</option>
+
+            <option value="C4">C4</option>
+            <option value="CS4">CS4</option>
+            <option value="D4">D4</option>
+            <option value="DS4">DS4</option>
+            <option value="E4">E4</option>
+            <option value="F4">F4</option>
+            <option value="FS4">FS4</option>
+            <option value="G4">G4</option>
+            <option value="GS4">GS4</option>
+            <option value="A4">A4</option>
+            <option value="AS4">AS4</option>
+            <option value="B4">B4</option>
+
+            <option value="C5">C5</option>
+            <option value="CS5">CS5</option>
+            <option value="D5">D5</option>
+            <option value="DS5">DS5</option>
+            <option value="E5">E5</option>
+            <option value="F5">F5</option>
+            <option value="FS5">FS5</option>
+            <option value="G5">G5</option>
+            <option value="GS5">GS5</option>
+            <option value="A5">A5</option>
+            <option value="AS5">AS5</option>
+            <option value="B5">B5</option>
+
+            <option value="C6">C6</option>
+            <option value="CS6">CS6</option>
+            <option value="D6">D6</option>
+            <option value="DS6">DS6</option>
+            <option value="E6">E6</option>
+            <option value="F6">F6</option>
+            <option value="FS6">FS6</option>
+            <option value="G6">G6</option>
+            <option value="GS6">GS6</option>
+            <option value="A6">A6</option>
+            <option value="AS6">AS6</option>
+            <option value="B6">B6</option>
+
+            <option value="C7">C7</option>
+            <option value="CS7">CS7</option>
+            <option value="D7">D7</option>
+            <option value="DS7">DS7</option>
+            <option value="E7">E7</option>
+            <option value="F7">F7</option>
+            <option value="FS7">FS7</option>
+            <option value="G7">G7</option>
+            <option value="GS7">GS7</option>
+            <option value="A7">A7</option>
+            <option value="AS7">AS7</option>
+            <option value="B7">B7</option>
+        </select>
+        <select name="format" id="custom9" class="custom nine">
+            <option selected disabled>l</option>
+            <option value="C1">C1</option>
+            <option value="CS1">CS1</option>
+            <option value="D1">D1</option>
+            <option value="DS1">DS1</option>
+            <option value="E1">E1</option>
+            <option value="F1">F1</option>
+            <option value="FS1">FS1</option>
+            <option value="G1">G1</option>
+            <option value="GS1">GS1</option>
+            <option value="A1">A1</option>
+            <option value="AS1">AS1</option>
+            <option value="B1">B1</option>
+            
+            <option value="C2">C2</option>
+            <option value="CS2">CS2</option>
+            <option value="D2">D2</option>
+            <option value="DS2">DS2</option>
+            <option value="E2">E2</option>
+            <option value="F2">F2</option>
+            <option value="FS2">FS2</option>
+            <option value="G2">G2</option>
+            <option value="GS2">GS2</option>
+            <option value="A2">A2</option>
+            <option value="AS2">AS2</option>
+            <option value="B2">B2</option>
+
+            <option value="C3">C3</option>
+            <option value="CS3">CS3</option>
+            <option value="D3">D3</option>
+            <option value="DS3">DS3</option>
+            <option value="E3">E3</option>
+            <option value="F3">F3</option>
+            <option value="FS3">FS3</option>
+            <option value="G3">G3</option>
+            <option value="GS3">GS3</option>
+            <option value="A3">A3</option>
+            <option value="AS3">AS3</option>
+            <option value="B3">B3</option>
+
+            <option value="C4">C4</option>
+            <option value="CS4">CS4</option>
+            <option value="D4">D4</option>
+            <option value="DS4">DS4</option>
+            <option value="E4">E4</option>
+            <option value="F4">F4</option>
+            <option value="FS4">FS4</option>
+            <option value="G4">G4</option>
+            <option value="GS4">GS4</option>
+            <option value="A4">A4</option>
+            <option value="AS4">AS4</option>
+            <option value="B4">B4</option>
+
+            <option value="C5">C5</option>
+            <option value="CS5">CS5</option>
+            <option value="D5">D5</option>
+            <option value="DS5">DS5</option>
+            <option value="E5">E5</option>
+            <option value="F5">F5</option>
+            <option value="FS5">FS5</option>
+            <option value="G5">G5</option>
+            <option value="GS5">GS5</option>
+            <option value="A5">A5</option>
+            <option value="AS5">AS5</option>
+            <option value="B5">B5</option>
+
+            <option value="C6">C6</option>
+            <option value="CS6">CS6</option>
+            <option value="D6">D6</option>
+            <option value="DS6">DS6</option>
+            <option value="E6">E6</option>
+            <option value="F6">F6</option>
+            <option value="FS6">FS6</option>
+            <option value="G6">G6</option>
+            <option value="GS6">GS6</option>
+            <option value="A6">A6</option>
+            <option value="AS6">AS6</option>
+            <option value="B6">B6</option>
+
+            <option value="C7">C7</option>
+            <option value="CS7">CS7</option>
+            <option value="D7">D7</option>
+            <option value="DS7">DS7</option>
+            <option value="E7">E7</option>
+            <option value="F7">F7</option>
+            <option value="FS7">FS7</option>
+            <option value="G7">G7</option>
+            <option value="GS7">GS7</option>
+            <option value="A7">A7</option>
+            <option value="AS7">AS7</option>
+            <option value="B7">B7</option>            
+        </select>
+
+        <!-- Buttons -->
+        <div class="button btnC">C</div>
+        <div class="button btnCS">C#</div>
+        <div class="button btnD">D</div>
+        <div class="button btnDS">D#</div>
+        <div class="button btnE">E</div>
+        <div class="button btnF">F</div>
+        <div class="button btnFS">F#</div>
+        <div class="button btnG">G</div>
+        <div class="button btnGS">G#</div>
+        <div class="button btnA">A</div>
+        <div class="button btnAS">A#</div>
+        <div class="button btnB">B</div>
+        <div class="button btnC1">C'</div>
+        <div class="button btnD1">D'</div>
+        <div class="button btnE1">E'</div>
+
+        <!-- Piano -->
+        <audio class="key piano C1"><source src="C1.mp3"></audio>
+        <audio class="key piano C2"><source src="C2.mp3"></audio>
+        <audio class="key piano C3"><source src="C3.mp3"></audio>
+        <audio class="key piano C4"><source src="C4.mp3"></audio>
+        <audio class="key piano C5"><source src="C5.mp3"></audio>
+        <audio class="key piano C6"><source src="C6.mp3"></audio>
+        <audio class="key piano C7"><source src="C7.mp3"></audio>
+        
+        <audio class="key piano CS1"><source src="CS1.mp3"></audio>
+        <audio class="key piano CS2"><source src="CS2.mp3"></audio>
+        <audio class="key piano CS3"><source src="CS3.mp3"></audio>
+        <audio class="key piano CS4"><source src="CS4.mp3"></audio>
+        <audio class="key piano CS5"><source src="CS5.mp3"></audio>
+        <audio class="key piano CS6"><source src="CS6.mp3"></audio>
+        <audio class="key piano CS7"><source src="CS7.mp3"></audio>
+
+        <audio class="key piano D1"><source src="D1.mp3"></audio>
+        <audio class="key piano D2"><source src="D2.mp3"></audio>
+        <audio class="key piano D3"><source src="D3.mp3"></audio>
+        <audio class="key piano D4"><source src="D4.mp3"></audio>
+        <audio class="key piano D5"><source src="D5.mp3"></audio>
+        <audio class="key piano D6"><source src="D6.mp3"></audio>
+        <audio class="key piano D7"><source src="D7.mp3"></audio>
+
+        <audio class="key piano DS1"><source src="DS1.mp3"></audio>
+        <audio class="key piano DS2"><source src="DS2.mp3"></audio>
+        <audio class="key piano DS3"><source src="DS3.mp3"></audio>
+        <audio class="key piano DS4"><source src="DS4.mp3"></audio>
+        <audio class="key piano DS5"><source src="DS5.mp3"></audio>
+        <audio class="key piano DS6"><source src="DS6.mp3"></audio>
+        <audio class="key piano DS7"><source src="DS7.mp3"></audio>
+
+        <audio class="key piano E1"><source src="E1.mp3"></audio>
+        <audio class="key piano E2"><source src="E2.mp3"></audio>
+        <audio class="key piano E3"><source src="E3.mp3"></audio>
+        <audio class="key piano E4"><source src="E4.mp3"></audio>
+        <audio class="key piano E5"><source src="E5.mp3"></audio>
+        <audio class="key piano E6"><source src="E6.mp3"></audio>
+        <audio class="key piano E7"><source src="E7.mp3"></audio>
+
+        <audio class="key piano F1"><source src="F1.mp3"></audio>
+        <audio class="key piano F2"><source src="F2.mp3"></audio>
+        <audio class="key piano F3"><source src="F3.mp3"></audio>
+        <audio class="key piano F4"><source src="F4.mp3"></audio>
+        <audio class="key piano F5"><source src="F5.mp3"></audio>
+        <audio class="key piano F6"><source src="F6.mp3"></audio>
+        <audio class="key piano F7"><source src="F7.mp3"></audio>
+
+        <audio class="key piano FS1"><source src="FS1.mp3"></audio>
+        <audio class="key piano FS2"><source src="FS2.mp3"></audio>
+        <audio class="key piano FS3"><source src="FS3.mp3"></audio>
+        <audio class="key piano FS4"><source src="FS4.mp3"></audio>
+        <audio class="key piano FS5"><source src="FS5.mp3"></audio>
+        <audio class="key piano FS6"><source src="FS6.mp3"></audio>
+        <audio class="key piano FS7"><source src="FS7.mp3"></audio>
+
+        <audio class="key piano G1"><source src="G1.mp3"></audio>
+        <audio class="key piano G2"><source src="G2.mp3"></audio>
+        <audio class="key piano G3"><source src="G3.mp3"></audio>
+        <audio class="key piano G4"><source src="G4.mp3"></audio>
+        <audio class="key piano G5"><source src="G5.mp3"></audio>
+        <audio class="key piano G6"><source src="G6.mp3"></audio>
+        <audio class="key piano G7"><source src="G7.mp3"></audio>
+
+        <audio class="key piano GS1"><source src="GS1.mp3"></audio>
+        <audio class="key piano GS2"><source src="GS2.mp3"></audio>
+        <audio class="key piano GS3"><source src="GS3.mp3"></audio>
+        <audio class="key piano GS4"><source src="GS4.mp3"></audio>
+        <audio class="key piano GS5"><source src="GS5.mp3"></audio>
+        <audio class="key piano GS6"><source src="GS6.mp3"></audio>
+        <audio class="key piano GS7"><source src="GS7.mp3"></audio>
+
+        <audio class="key piano A1"><source src="A1.mp3"></audio>
+        <audio class="key piano A2"><source src="A2.mp3"></audio>
+        <audio class="key piano A3"><source src="A3.mp3"></audio>
+        <audio class="key piano A4"><source src="A4.mp3"></audio>
+        <audio class="key piano A5"><source src="A5.mp3"></audio>
+        <audio class="key piano A6"><source src="A6.mp3"></audio>
+        <audio class="key piano A7"><source src="A7.mp3"></audio>
+
+        <audio class="key piano AS1"><source src="AS1.mp3"></audio>
+        <audio class="key piano AS2"><source src="AS2.mp3"></audio>
+        <audio class="key piano AS3"><source src="AS3.mp3"></audio>
+        <audio class="key piano AS4"><source src="AS4.mp3"></audio>
+        <audio class="key piano AS5"><source src="AS5.mp3"></audio>
+        <audio class="key piano AS6"><source src="AS6.mp3"></audio>
+        <audio class="key piano AS7"><source src="AS7.mp3"></audio>
+
+        <audio class="key piano B1"><source src="B1.mp3"></audio>
+        <audio class="key piano B2"><source src="B2.mp3"></audio>
+        <audio class="key piano B3"><source src="B3.mp3"></audio>
+        <audio class="key piano B4"><source src="B4.mp3"></audio>
+        <audio class="key piano B5"><source src="B5.mp3"></audio>
+        <audio class="key piano B6"><source src="B6.mp3"></audio>
+        <audio class="key piano B7"><source src="B7.mp3"></audio>
+
+        <!-- Copyrights -->
+        <h4 id="copyrights">© 2023 Helven Marcia</h4>
+        <script src="piano.js"></script>
+    </body>
+</html>
