@@ -1,0 +1,210 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #111; height: 100%; width: 100%;
+    user-select: none; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.instrument {
+    width: 360px; height: 100px;
+    background-color: azure; color: #111; display: flex;
+    align-items: center; justify-content: center; margin: 0;
+    position: absolute; left: 240px; transition: .3s; top: 100px;
+}
+.instrument.piano {
+    left: calc(240px + 360px * 0);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.instrument.cat {
+    left: calc(240px + 360px * 1);
+}
+.instrument.gunshot {
+    left: calc(240px + 360px * 2);
+}
+.instrument.heartbeat {
+    left: calc(240px + 360px * 3);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.instrument:hover {
+    background-color: #111; color: azure;
+}
+.instrument:active {
+    filter: drop-shadow(0 0 20px azure);
+}
+
+.custom {
+    width: 160px; height: 100px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: azure; color: #111; display: flex; font-size: 20px; text-align: center;
+    align-items: center; justify-content: center; margin: 0; overflow: hidden;
+    position: absolute; left: 240px; transition: .3s; top: 200px;
+}
+.custom.one {
+    left: calc(240px + 160px * 0);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.custom.two {
+    left: calc(240px + 160px * 1);
+}
+.custom.three {
+    left: calc(240px + 160px * 2);
+}
+.custom.four {
+    left: calc(240px + 160px * 3);
+}
+.custom.five {
+    left: calc(240px + 160px * 4);
+}
+.custom.six {
+    left: calc(240px + 160px * 5);
+}
+.custom.seven {
+    left: calc(240px + 160px * 6);
+}
+.custom.eight {
+    left: calc(240px + 160px * 7);
+}
+.custom.nine {
+    left: calc(240px + 160px * 8);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.activated {
+    background-color: #111; color: azure;
+}
+
+.savebtn {
+    width: 1440px; height: 100px;
+    background-color: azure; color: #111; display: flex; 
+    align-items: center; justify-content: center; margin: 0; border-radius: 10px;
+    position: absolute; left: 240px; transition: .3s; top: 500px;
+}
+.savebtn:hover {
+    background-color: #111; color: azure;
+}
+.savebtn:active {
+    background-color: greenyellow; color: #111;
+}
+
+.button {
+    width: 96px; height: 100px;
+    background-color: azure; color: #111; display: flex; 
+    align-items: center; justify-content: center; margin: 0;
+    position: absolute; left: 240px; transition: .3s; top: 700px;
+}
+
+.button:hover {
+    background-color: #111; color: azure;
+}
+
+.btnC {
+    left: calc(240px + 96px * 0);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.btnCS {
+    left: calc(240px + 96px * 1);
+}
+.btnD {
+    left: calc(240px + 96px * 2);
+}
+.btnDS {
+    left: calc(240px + 96px * 3);
+}
+.btnE {
+    left: calc(240px + 96px * 4);
+}
+.btnF {
+    left: calc(240px + 96px * 5);
+}
+.btnFS {
+    left: calc(240px + 96px * 6);
+}
+.btnG {
+    left: calc(240px + 96px * 7);
+}
+.btnGS {
+    left: calc(240px + 96px * 8);
+}
+.btnA {
+    left: calc(240px + 96px * 9);
+}
+.btnAS {
+    left: calc(240px + 96px * 10);
+}
+.btnB {
+    left: calc(240px + 96px * 11);
+}
+.btnC1 {
+    left: calc(240px + 96px * 12);
+}
+.btnD1 {
+    left: calc(240px + 96px * 13);
+}
+.btnE1 {
+    left: calc(240px + 96px * 14);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#copyrights {
+    display: flex; align-items: center; justify-content: center;
+    width: 150px; left: 885px;
+    font-family:'Times New Roman', Times, serif;
+    position: absolute; color: azure; bottom: 15px; font-size: 15px;
+}
